@@ -1,15 +1,12 @@
 body { 
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-
   background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
-
   min-height: 100vh;
 }
 
 .page {
-  
-  width: 100% ;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 65px ;
@@ -114,79 +111,92 @@ footer a {
   right: 0;
  }
 
+
+ /* Telas pequenas (mobile) */
+
  @media (max-width: 768px) {
   .page {
-    padding-top: 20px;
-    width: 100%;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   nav {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 40px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
   }
 
   main {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   main h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 30px;
   }
 
   section p {
-    font-size: 12px;
-    line-height: 24px;
-    margin: 20px 0;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 30px 0;
   }
 
   botton {
-    padding: 12px 25px;
-    font-size: 14px;
+    padding: 16px 36px;
+    font-size: 16px;
   }
 
   footer {
-    font-size: 12px;
-    margin-top: 40px;
+    font-size: 16px;
+    margin-top: 60px;
   }
 
   #balls {
-    width: 50px;
-    height: auto;
+    width: 60px;
   }
  }
 
 
+ /* Telas médias ( tablets) */
  @media (max-width: 1024px) {
   .page {
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   main {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 70px;
   }
 
   main h1 {
     font-size: 40px;
+    margin-bottom: 25px;
   }
 
   section p {
-    font-size: 13px;
+    font-size: 15px;
+    margin: 30px 0;
   }
 
   button {
-    padding: 13px 28px;
+    padding: 16px 36px;
+    font-size: 80pxs
   }
 
   #balls {
-    width: 70px;
+    width: 75px;
   }
  }
