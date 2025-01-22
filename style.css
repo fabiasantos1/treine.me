@@ -9,7 +9,8 @@ body {
 
 .page {
   
-  width: 1000px ;
+  width: 100% ;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 65px ;
 }
@@ -18,7 +19,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 55px;
 
 }
@@ -62,7 +62,6 @@ h1 {
   font-size: 49px;
   line-height: 56px;
   color: #1F1534;
-  
   font-weight: normal;
 }
 
@@ -75,7 +74,6 @@ section p {
   font-size: 14px;
   line-height: 28px;
   color: #7D7987;
-
   margin: 40px 0;
 }
 
@@ -83,18 +81,14 @@ button {
   color: white;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  
   background: #69B99D;
   border: none;
   padding: 14px 32px 15px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   border-radius: 4px;
-
   cursor: pointer;
 }
 
@@ -106,9 +100,7 @@ button:hover {
 footer {
   font-size: 14px;
   line-height: 28px;
-
   text-align: center;
-
   margin-top: 80px;
 }
 
@@ -120,4 +112,81 @@ footer a {
   position: fixed;
   bottom: 0;
   right: 0;
+ }
+
+ @media (max-width: 768px) {
+  .page {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  section p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+
+  botton {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  #balls {
+    width: 50px;
+    height: auto;
+  }
+ }
+
+
+ @media (max-width: 1024px) {
+  .page {
+    padding-top: 30px;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  section p {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 13px 28px;
+  }
+
+  #balls {
+    width: 70px;
+  }
  }
